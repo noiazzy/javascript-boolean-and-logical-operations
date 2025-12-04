@@ -7,6 +7,14 @@ let hasBoughtProductFromITCategory;
 let hasAttendedDiscountEvent;
 let isPlatinum;
 
-let hasPromotion;
+
+lastMonthPaidMoreThan4000 = 4001;
+isWeekday = "friday";
+hasBoughtProductFromITCategory = false;
+hasAttendedDiscountEvent = true;
+isPlatinum = false;
+
+let hasPromotion = lastMonthPaidMoreThan4000 >=4000 && (isWeekday == "monday" || isWeekday == "tuesday" || isWeekday == "wednesday" || isWeekday == "thursday" || isWeekday === "friday")  && !hasBoughtProductFromITCategory && !hasAttendedDiscountEvent || isPlatinum ;
+
 
 console.log(hasPromotion);

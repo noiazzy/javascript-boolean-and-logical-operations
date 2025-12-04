@@ -4,5 +4,10 @@ let hasCriminalBlacklist;
 let isAllow;
 
 // Start coding here
+isOver18 = 18
+hasCriminalBlacklist = false;
 
-console.log(isAllow);
+isAllow = isOver18 >= 18 && !hasCriminalBlacklist
+
+
+console.log(isAllow); 
