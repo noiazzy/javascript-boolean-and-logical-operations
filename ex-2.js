@@ -9,4 +9,12 @@ let isPlatinum;
 
 let hasPromotion;
 
+//ผู็ซื้อสินค้ารายหนึ่ง
+lastMonthPaidMoreThan4000 = true;
+isWeekday = true;
+hasBoughtProductFromITCategory = false;
+hasAttendedDiscountEvent = true;
+isPlatinum = false;
+hasPromotion = (lastMonthPaidMoreThan4000 && !hasBoughtProductFromITCategory && !hasAttendedDiscountEvent) || isPlatinum;
+
 console.log(hasPromotion);
